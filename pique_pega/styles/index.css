@@ -1,0 +1,28 @@
+section.sectionGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+}
+section.sectionGame div.textGames{
+    text-align: center;
+}
+div.textGames h1{
+    color: greenyellow;
+}
+div.textGames h2{
+    color: rgb(108, 160, 30);
+}
+div.textGames p,h2{
+    margin-top: 10px;
+}
+svg.area{
+    width:510px; 
+    height:510px;
+    background-color: darkgray;
+    border:  solid 1px greenyellow;
+}

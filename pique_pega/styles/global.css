@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+body{
+    background-color:black;
+    color:whitesmoke;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Roboto", sans-srif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2{
+  cursor: default;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+p{
+    font-size: 18px;
+}
+
+li {
+  list-style: none;
+}
