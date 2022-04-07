@@ -170,7 +170,7 @@ function checkFinal(){
         if(enemyCheck.x >= x-10 && enemyCheck.x <= x+10 || enemyCheck.x == x ){
             console.log("teste")
             alert("Acabou")
-            location.reload();
+            location.reload(true);
         }  
     }
     
