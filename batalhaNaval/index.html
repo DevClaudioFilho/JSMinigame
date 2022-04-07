@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet"  href="./styles/global.css">
+    <link  rel="stylesheet"  href="./styles/index.css">
+</head>
+<body>
+    
+    <div draggable="true" ondragstart="drag(event)" data-size="1" id="teste"></div>
+
+    <table>
+        <th>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+        </th>
+        <tr>
+            <td>1</td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        </tr>
+    </table>
+    <script src="./script/index.js"></script>
+</body>
+</html>

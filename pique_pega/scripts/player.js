@@ -165,11 +165,42 @@ function checkFinal(){
     y= player.position.y 
     x= player.position.x 
    
-    if( enemyCheck.y== y +10 || enemyCheck.y== y -10 ||  enemyCheck.y == y  ) {
-        console.log("fim")
-        if(enemyCheck.x >= x-10 && enemyCheck.x <= x+10 || enemyCheck.x == x ){
-            console.log("teste")
+    if( enemyCheck.y<= y+19 && enemyCheck.y>= y -19 ||  enemyCheck.y == y  ) {
+        console.log("y=y")
+        if(enemyCheck.x >= x-19 && enemyCheck.x <= x+19 || enemyCheck.x == x ){
             alert("Acabou")
+            player={
+                size:{
+                    width: 20,
+                    height: 20
+                },
+                position:{
+                    x: 10,
+                    y: 10
+                },
+                control:{
+                    up:false,
+                    rigth:false,
+                    down:false,
+                    left:false
+                }
+            }
+            enemy={
+                size:{
+                    width: 20,
+                    height: 20
+                },
+                position:{
+                    x: 470,
+                    y: 470
+                },
+                control:{
+                    up:false,
+                    rigth:false,
+                    down:false,
+                    left:false
+                }
+            }
             location.reload(true);
         }  
     }
@@ -206,8 +237,8 @@ window.addEventListener("keydown",async(event)=>{
     movimentPlayer()  
     refreshPositionPlayer()
     refreshPositionEnemy()
-
-    console.log("teste")
+    console.log(enemy.position)
+    console.log(player.position)
     await checkFinal()
     event.preventDefault()
     
